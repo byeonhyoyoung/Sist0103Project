@@ -1,0 +1,37 @@
+package day0104;
+
+public class QuizKeyBoardIn_16 {
+
+	public static void main(String[] args) {
+		/*
+		 * 상품을 입력하세요==>아이폰15
+		 * 가격은 얼마입니까?==>1200000
+		 * 수량은 몇개입니까?==>5
+		 * 
+		 * 상품입고
+		 * =======================
+		 * 입고상품명: 아이폰15
+		 * 수량: 5개
+		 * 가격: 1200000원
+		 * =======================
+		 * 총가격: 6000000원
+		 */
+		
+		//1.변수선언
+		String sangName=args[0];
+		int price=Integer.parseInt(args[1]);
+		int count=Integer.parseInt(args[2]);
+		
+		//2.계산
+		int total=count*price;
+		
+		//3.출력
+		System.out.println("상품입고");
+		System.out.println("입고상품명: "+sangName);
+		System.out.println("수량: "+count+" 개");
+		System.out.println("가격: "+price+" 원");
+		System.out.println("총가격: "+total+" 원");
+
+	}
+
+}

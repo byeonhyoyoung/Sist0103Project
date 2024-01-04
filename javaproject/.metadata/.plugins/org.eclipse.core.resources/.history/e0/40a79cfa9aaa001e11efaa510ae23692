@@ -1,0 +1,9 @@
+package day0104;
+
+public class PrintF_04 {
+
+	public static void main(String[] args) {
+		// %d: 정수  %f:실수  %f:문자열
+		
+	}
+}

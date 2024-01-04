@@ -1,0 +1,23 @@
+package day0104;
+
+import java.util.Calendar;
+
+public class CalAge_12 {
+
+	public static void main(String[] args) {
+		// 실행단계에서 변수입력하여 이름,태어난년도를 입력하여 나이를 출력해보자
+
+		//1.import
+		Calendar calendar=Calendar.getInstance();
+		
+	
+		//2.변수선언
+		String name=args[0];
+		
+		//3.계산
+		
+		//4.출력
+		
+	}
+
+}

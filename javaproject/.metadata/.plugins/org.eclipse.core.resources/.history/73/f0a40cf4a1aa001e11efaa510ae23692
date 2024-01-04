@@ -1,0 +1,13 @@
+package day0104;
+
+public class DataType_07 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub\
+		byte a=(byte)128; //디모션 : 더 작은 자료형으로 변환,값손실
+		
+		System.out.println(a);
+
+	}
+
+}

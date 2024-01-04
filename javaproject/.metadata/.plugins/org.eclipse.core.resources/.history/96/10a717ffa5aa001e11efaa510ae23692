@@ -1,0 +1,19 @@
+package day0104;
+
+public class DataType_08 {
+
+	public static void main(String[] args) {
+		// 묵시적(암묵적)형변환은 자동으로 결정되는 타입
+		//String+int=String
+		//double+int=double
+		//long+short=long
+		//cha+int=int
+		
+		char a='A';
+		
+		System.out.println(a);
+		
+		
+	}
+
+}
