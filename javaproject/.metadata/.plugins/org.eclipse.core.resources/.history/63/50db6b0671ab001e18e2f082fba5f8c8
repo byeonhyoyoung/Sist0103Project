@@ -1,0 +1,22 @@
+package day0105;
+
+public class QuizOper_07 {
+
+	public static void main(String[] args) {
+		// 여러분이 받은 알바비를 입력한후 만원,천원,백원,십원,일원의 갯수를 출력하시오
+		/*
+		 * 얼바비는?  568712
+		 * 
+		 * 만원: 56
+		 * 천원: 8
+		 * 백원: 7
+		 * 십원: 1
+		 * 일원: 2
+		 */
+		
+		
+		
+
+	}
+
+}

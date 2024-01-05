@@ -1,0 +1,11 @@
+package day0105;
+
+public class IfOper_12 {
+
+	public static void main(String[] args) {
+		// 삼항(조건)연산자
+		//형식조건식?참일떄의 값:거짓일떄의 값
+
+	}
+
+}
