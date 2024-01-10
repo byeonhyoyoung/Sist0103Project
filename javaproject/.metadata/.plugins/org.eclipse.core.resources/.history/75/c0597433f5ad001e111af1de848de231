@@ -1,0 +1,40 @@
+package day0108;
+
+public class QuizForWhile_15 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		test1();
+	}
+	
+	public static void test1() {
+	
+		//문제: 1~100까지의 3의 배수 갯수 구하기
+		int n=0;
+		int cnt=0;
+		
+		while(true)
+		{
+			n++;
+			
+			//3의 배수이면 cnt변수 1증가
+			if(n%3==0)
+				cnt++;
+			
+			//n이 100이면 while문 종료
+			if(n==100)
+				break;
+		}
+		System.out.println("3의 배수 갯수: "+con+" 개");
+	}
+	public static void test2() {
+	
+		
+	}
+	public static void test3() {
+	
+	
+}
+
+}

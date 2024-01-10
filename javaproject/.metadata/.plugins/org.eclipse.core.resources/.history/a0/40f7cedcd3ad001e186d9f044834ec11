@@ -1,0 +1,17 @@
+package day0108;
+
+public class For_09 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// 가로로 1~10까지 출력
+		
+		for
+		
+		//10~1까지 출력
+		
+		
+		//배수, continue
+	}
+
+}

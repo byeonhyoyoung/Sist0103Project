@@ -1,0 +1,34 @@
+package day0108;
+
+public class WhileTest_06 {
+
+	public static void main(String[] args) {
+		// 1~10까지 반복 출력
+		int n=0; //초기값
+		
+		while(n<10)
+		{
+			n++;
+			System.out.printf("%4d",n);
+		}
+	
+		System.out.println();
+		
+		n=0;
+		
+		while(n<10)
+		{
+			System.out.printf("%4d",++n);
+		}
+		
+		System.out.println();
+		
+		n=0;
+		while(true)
+		{
+			System.out.println("%4d",++n);
+		}
+
+	}
+
+}

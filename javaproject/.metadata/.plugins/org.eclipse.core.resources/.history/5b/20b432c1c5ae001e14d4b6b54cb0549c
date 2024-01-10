@@ -1,0 +1,41 @@
+package day0109;
+
+public class QuizInOutRank_15 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String [] name= {"홍수연","김수연","최수연","민수연"};
+		int [] kor= {90,88,100,78};
+		int [] eng= {100,76,56,71};
+		int [] mat= {93,85,99,56};
+		
+		int [] tot=new int[4];
+		double [] avg=new double[4];
+		int [] rank=new int[4];
+		
+		/*
+		 *  1:1 카톡으로 콘솔창 결과물만 보내기
+		 * 
+		 * 각 학생들의 점수에 대한 총점 평균 등수를 구하여 출력하세요
+		 * 
+		 * 번호  이름  국어  영어  수학  총점  평균  등수
+		 * =====================================
+		 *  1  홍수연  90  100  44   **   **   4
+		 */
+		
+		//1. 총점 평균 ..배열로
+		
+		//등수
+		
+		//출력
+		
+		
+		System.out.println("이름");
+		for(int i=0;i<name.length;i++)
+		{
+			System.out.print(name [i]);
+		}
+		
+	}
+
+}

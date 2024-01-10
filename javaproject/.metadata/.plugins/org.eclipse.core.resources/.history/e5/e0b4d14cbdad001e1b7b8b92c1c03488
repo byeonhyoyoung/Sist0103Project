@@ -1,0 +1,28 @@
+package day0108;
+
+import java.util.Scanner;
+
+public class OperReview_01 {
+
+	public static void main(String[] args) {
+		// import,선언,입력,계산,출력
+		Scanner sc=new Scanner(System.in);
+		
+		String name;
+		int kor,eng,mat;
+		
+		System.out.println("이름?");
+		name=sc.nextLine();
+		System.out.println("국영수 점수?");
+		kor=sc.nextInt();
+		eng=sc.nextInt();
+		mat=sc.nextInt();
+		
+		double avg=(kor+eng+mat)/3.0;
+		
+		System.out.println("3과목 점수: "+kor+","+eng+","+mat);
+		System.out.println("평균: "+avg);
+		
+	}
+
+}

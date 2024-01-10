@@ -1,0 +1,17 @@
+package day0108;
+
+public class Factorial_13 {
+
+	public static void main(String[] args) {
+		// 1~10까지의 팩토리얼 구하기
+		int result=1; //팩토리얼의 결과값을 구할 떄는 무조건 1
+		
+		for(int i=1;1<=10;i++)
+		{
+			result*=i;
+			System.out.println(i+"!"+"="+result);
+		}
+
+	}
+
+}

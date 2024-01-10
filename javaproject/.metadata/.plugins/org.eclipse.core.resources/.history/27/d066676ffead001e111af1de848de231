@@ -1,0 +1,34 @@
+package day0108;
+
+public class Quiz_18 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		//quiz_1();
+		//quiz_2();
+
+	}
+	
+	public static void quiz_1() {
+	
+		/*Q. 반복해서 숫자를 입력하여 양수의 갯구와 음수의 갯수를 구하시오(0입력시 종료)
+		 *
+		 * 6
+		 * -10
+		 * 88
+		 * 120
+		 * -120
+		 * 0
+		 * 양수의 갯수: 3개
+		 * 음수의 갯수: 2개
+		 * while true문 이용*/
+	}
+	public static void quiz_2() {
+		
+		//반복해서 점수를 입력하는데 (1~100) 0을 입력시 빠져나와 갯수와 합계와 평균을 구하시오
+		
+	}
+
+
+}

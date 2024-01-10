@@ -1,0 +1,11 @@
+package day0110;
+
+public class ArraySearchName_02 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		String [] names= {"변효영","박민지","성수아","백수현","곽혜정","이예림","백순흠","김은규"};
+	}
+
+}
