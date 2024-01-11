@@ -1,8 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.util.Calendar"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="java.util.Random"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="day0110.Card"/>
+    <fullyQualifiedTypeName name="day0110.StaticInstance_09"/>
+    <fullyQualifiedTypeName name="day0110.Student"/>
+    <fullyQualifiedTypeName name="day0110.Numb"/>
+    <fullyQualifiedTypeName name="day0110.MyDate_14"/>
+    <fullyQualifiedTypeName name="day0110.MyDate"/>
+    <fullyQualifiedTypeName name="java.util.Calendar"/>
+    <fullyQualifiedTypeName name="day0111.person"/>
+    <fullyQualifiedTypeName name="day0111.Apple"/>
+    <fullyQualifiedTypeName name="day0111.Orange"/>
+    <fullyQualifiedTypeName name="day0111.Test"/>
+    <fullyQualifiedTypeName name="day0111.MyCar"/>
+    <fullyQualifiedTypeName name="day0111.Manggo"/>
+    <fullyQualifiedTypeName name="day0111.Student"/>
 </qualifiedTypeNameHistroy>

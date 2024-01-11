@@ -1,0 +1,30 @@
+package day0111;
+
+class Member{
+	
+	private String stuName;
+	private String stuGender;
+	private String stuAddr;
+	
+	static String ban;
+	static int cnt=0;
+	
+	//멤버메서드
+	public void setMemberData(String name,String gender,String addr)
+	{
+		this.stuName=name;
+		this.stuGender=gender;
+		this.stuAddr=addr;
+	}
+	
+}
+
+/////////////////
+public class StaticObTest_05 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

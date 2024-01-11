@@ -1,0 +1,23 @@
+package day0111;
+
+class Shop{
+	private String sangpum;
+	private int price;
+	private String sangColor;
+	
+	public Shop(String s,int p,String c) {
+		sangpum=s;
+		price=p;
+		sangColor=c;
+		
+	}
+}
+
+public class ArrObTest_11 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
