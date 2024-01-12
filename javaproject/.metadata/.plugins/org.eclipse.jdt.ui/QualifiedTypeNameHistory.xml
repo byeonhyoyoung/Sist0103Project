@@ -2,12 +2,9 @@
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="java.util.Random"/>
-    <fullyQualifiedTypeName name="java.lang.Integer"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="day0110.Card"/>
     <fullyQualifiedTypeName name="day0110.StaticInstance_09"/>
-    <fullyQualifiedTypeName name="day0110.Student"/>
     <fullyQualifiedTypeName name="day0110.Numb"/>
     <fullyQualifiedTypeName name="day0110.MyDate_14"/>
     <fullyQualifiedTypeName name="day0110.MyDate"/>
@@ -19,4 +16,25 @@
     <fullyQualifiedTypeName name="day0111.MyCar"/>
     <fullyQualifiedTypeName name="day0111.Manggo"/>
     <fullyQualifiedTypeName name="day0111.Student"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="java.lang.Void"/>
+    <fullyQualifiedTypeName name="day0112.Food"/>
+    <fullyQualifiedTypeName name="day0112.SubObj_03"/>
+    <fullyQualifiedTypeName name="day0112.Employee_04"/>
+    <fullyQualifiedTypeName name="day0112.MainEmp_04"/>
+    <fullyQualifiedTypeName name="day0112.Manager_04"/>
+    <fullyQualifiedTypeName name="day0112_1.Sawon_05"/>
+    <fullyQualifiedTypeName name="day0112.My"/>
+    <fullyQualifiedTypeName name="java.lang.Override"/>
+    <fullyQualifiedTypeName name="java.awt.event.KeyAdapter"/>
+    <fullyQualifiedTypeName name="day0112.KangnamEmart"/>
+    <fullyQualifiedTypeName name="day0112.School"/>
+    <fullyQualifiedTypeName name="day0110.Student"/>
+    <fullyQualifiedTypeName name="day0112.student"/>
+    <fullyQualifiedTypeName name="java.lang.StackWalker"/>
+    <fullyQualifiedTypeName name="day0112_1.SwingFrame"/>
+    <fullyQualifiedTypeName name="day0112.Car"/>
+    <fullyQualifiedTypeName name="day0112.Clesn"/>
+    <fullyQualifiedTypeName name="day0112.Apple"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
 </qualifiedTypeNameHistroy>

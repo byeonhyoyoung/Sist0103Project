@@ -9,42 +9,42 @@ class Emp{
 	private int fSu; //가족수
 	private int tSu; //오버타임수
 
-	
+	//명시적생성자
+	public Emp(String name,int pay,int fs,int ts) {
+		this.sName=name;
+		this.gPay=pay;
+		this.fSu=fs;
+		this.tSu=ts;
+		
+	}
 	
 	public String getsName() {
 		return sName;
 	}
-
-
+	
 	public void setsName(String sName) {
 		this.sName = sName;
 	}
-
-
+	
 	public int getgPay() {
 		return gPay;
 	}
-
-
+	
 	public void setgPay(int gPay) {
 		this.gPay = gPay;
 	}
-
 
 	public int getfSu() {
 		return fSu;
 	}
 
-
 	public void setfSu(int fSu) {
 		this.fSu = fSu;
 	}
 
-
 	public int gettSu() {
 		return tSu;
 	}
-
 
 	public void settSu(int tSu) {
 		this.tSu = tSu;
@@ -61,7 +61,7 @@ class Emp{
 		else
 			n=fSu*50000;
 		
-		return 0;
+		return n;
 	}
 	//시간수당
 	public int getTimeSudang()
@@ -82,7 +82,7 @@ class Emp{
 	}
 	
 	//제목
-	public static void showTitle()
+	public static void showTitle() //의미 없는 제목이라 static으로 함?
 	{
 		System.out.println("***쌍용 01월 직원 급여현황***");
 		System.out.println();
@@ -120,14 +120,30 @@ public class SawonInstanceScanner_15 {
 		//인원수만큼 데이타 입력
 		for(int i=0;i<inwon;i++)
 		{
-			emp[i]=new Emp();
+			//emp[i]=new Emp(); //생성자를 만든 기억이 없기 때문에
 		
 			System.out.println("이름");
 			String name=sc.nextLine();
 			System.out.println("기본급?");
 			int pay=Integer.parseInt(sc.nextLine());
+			System.out.println("자녀수 입력");
+			int fs=Integer.parseInt(sc.nextLine());
+			System.out.println("초과근무시간");
+			int ts=Integer.parseInt(sc.nextLine());
 			
+			emp[i]=new Emp(name, pay, fs, ts);
+			
+			//setter로 emp클래스에 데이타 넣기
+			/*emp[i].setsName(name);
+			emp[i].setgPay(pay);
+			emp[i].setfSu(fs);
+			emp[i].settSu(ts);*/
+			
+			System.out.println(); //static이니까 생성안해줘도된다
 		}
+		
+		//출력
+		writeEmp(emp);
 		
 	}
 

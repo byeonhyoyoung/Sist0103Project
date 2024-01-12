@@ -1,0 +1,32 @@
+package day0112;
+
+class Quiz {
+	
+	private String name;
+	private int jave;
+	private int oracle;
+	private int html;
+	private int totalAmount;
+	private int average;
+	private String appraisal;
+	
+	private static int no;
+	static String hagwonName="쌍용교육센터";
+	
+	//명시적생성자
+	public Quiz(String name, int jave, int oracle, ) 
+	{
+		this.sName=name;
+		this.sPrice=price;
+		this.sColor=color;
+	}	
+
+
+public class QuizMain_15 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

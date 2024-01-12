@@ -18,7 +18,7 @@ class Shop{
 		this.setSangColor(sangColor);
 	}
 	
-	/*
+	
 	//setter, getter
 	public String getSangpum() {
 		return sangpum;
@@ -42,7 +42,7 @@ class Shop{
 
 	public void setSangColor(String sangColor) {
 		this.sangColor = sangColor;
-	}*/
+	}
 
 
 	
@@ -87,8 +87,7 @@ public class ArrObTest_11 {
 			s.showShop();
 		System.out.println("======================");
 		
-		Shop.showTitle();
-		for(int i=0;i<shop.length;i++);
+		
 	
 	}	
 		
