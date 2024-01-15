@@ -1,0 +1,31 @@
+package day0115;
+
+import java.util.List;
+import java.util.Scanner;
+import java.util.Vector;
+
+public class Quiz1_10 {
+
+	List<Quiz1_10> list=new Vector<Quiz1_10>();
+	
+	//입력메서드
+	public void inputData() {
+		
+		Scanner sc=new Scanner(System.in);
+		String sangName;
+		int su, dan;
+		
+		System.out.println("상품명?");
+		sangName=sc.nextLine();
+		System.out.println("가격");
+		su=sc.nextInt();
+		System.out.println("수량");
+		dan=sc.nextInt();
+		
+		Quiz1_10 data=new Quiz1_10(sangName, su, dan);
+		list.add(data);
+		
+		System.out.println("현재데이타갯수: "+list.size()+" 개");
+		
+	}
+}
