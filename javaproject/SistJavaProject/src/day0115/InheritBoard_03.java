@@ -57,7 +57,7 @@ public class InheritBoard_03 {
 		
 		exit:while(true)
 		{
-			System.out.println("1.추가  2.출력  3.수정  4.삭제  5.그이외숫자.종료");
+			System.out.println("1.추가  2.출력  3.수정  4.삭제  그이외숫자.종료");
 			System.out.println("================>");
 			n=sc.nextInt();
 			

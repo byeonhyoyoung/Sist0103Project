@@ -7,11 +7,12 @@ public class ListEx_08 {
 	//static 단순출력
 	public static void write(String title,List<String> list)
 	{
-		System.out.println("**+title+**");
+		System.out.println("**"+title+"**");
 		for(int i=0;i<list.size();i++)
 		{
 			System.out.println(i+":"+list.get(i));
 		}
+		System.out.println();
 	}
 	
 	public static void main(String[] args) {

@@ -42,4 +42,6 @@ public class InheritReview_01 {
 		
 		InterBB bb=new InterImple_01();
 		bb.draw();
+	}
 }
+	
