@@ -1,0 +1,27 @@
+package day0116;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+
+//BufferReader: 버퍼를 사용해서 파일읽기
+//FileReader: 경로에 있는 파일로드: 반드시 Exception발생
+
+public class FileException_11 {
+
+	//생성안하고 호출하려고 static
+	public static void read()
+	{
+		String fileName="C:\\sist0103\\File\\memo.txt";
+		BufferedReader br=null;
+		FileReader fr=null; //문자단위
+
+		//읽기위해서 파일열기
+		fr=new FileReader(fileName);
+		
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

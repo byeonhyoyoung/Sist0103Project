@@ -1,0 +1,36 @@
+package day0116;
+
+class Outer{
+	
+	String name="변효영",
+	int age=20;
+	
+	//member 내부1
+	class Inner1{
+	
+		//내부ㅜ클래스에서는 외부클래스의 멤버변수사용 가능하다
+		public void disp()
+		{
+			System.out.println("**Inner1 내부클래스**");
+			System.out.println("이름: "+name+", 나이: "+age+"세");
+		}
+	}
+	//member 내부2
+	class Inner2{
+	
+		public void disp2()
+		{
+			System.out.println("**Inner2 내부클래스**");
+			System.out.println("이름: "+name+", 나이: "+age+"세");
+		}
+	}
+}
+///////////////////////////
+public class InnerObj_05 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,18 @@
+package day0116;
+
+public class Home {
+	
+	//필드에 익명 구현 객체 대입
+	private RemoteControl rc=new RemoteControl() {
+		
+		
+	}
+	
+	public static void main(String[] args) {
+		
+		
+		
+
+	}
+
+}

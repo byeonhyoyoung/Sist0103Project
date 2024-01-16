@@ -1,0 +1,23 @@
+package day0116;
+
+//강제예외발생 throw
+class UserException extends Exception{
+	
+	public UserException(String msg) {
+		super(msg); //Exception클래스 생성자 통해(상속받아서) 정식 메세지로 등록
+	}
+}
+/////////////////////////////
+public class ThrowException_03 {
+
+	public static void process() throws UserException
+	{
+		
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

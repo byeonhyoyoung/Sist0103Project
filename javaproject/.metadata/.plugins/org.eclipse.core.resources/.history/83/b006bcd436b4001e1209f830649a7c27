@@ -1,0 +1,19 @@
+package day0116;
+
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
+public class FileException_12 {
+
+	//점수의  총개수,합계,평균
+	public static void scoreRead() throws FileNotFoundException,IOException
+	{
+		
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
