@@ -1,0 +1,25 @@
+package day0117;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class Format_01 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Date date=new Date();
+		
+		System.out.println(date);
+		
+		//날짜,시간을 원하는 양식에 맞춰 출력하기
+		//HH는 24시간표시 MM:월 mm:분
+		SimpleDateFormat sdf1=new SimpleDateFormat("yyyy-MM-dd HH:mm");
+		System.out.println(sdf1.format(date));
+		
+		//a: 오전/오후  hh:12시간표시
+		SimpleDateFormat sdf2=new SimpleDateFormat("yyyy=MM-dd a hh:mm:ss");
+		System.out.println(sdf2.format(date));
+	}
+
+}

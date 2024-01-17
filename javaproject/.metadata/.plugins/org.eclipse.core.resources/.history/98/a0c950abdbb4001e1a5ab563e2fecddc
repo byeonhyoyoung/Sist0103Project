@@ -1,0 +1,36 @@
+package day0117;
+
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.Scanner;
+
+public class FWriter_04 {
+	
+	Scanner sc;
+	FileWriter fw; //인스턴스변수 - static 쓰면 안되여
+	static final String FILENAME="C:\\sist0103\\File\\member.txt";
+	
+	public FWriter_04() {
+		sc=new Scanner(System.in);
+	}
+	
+	public void dataWrite()
+	{
+		try {
+			fw=new FileWriter(FILENAME,true);
+			
+			//키보드로 이름,주소,핸드폰번호 입력후 파일에 저장
+			
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

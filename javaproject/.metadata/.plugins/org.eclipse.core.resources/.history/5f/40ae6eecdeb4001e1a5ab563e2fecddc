@@ -1,0 +1,39 @@
+package day0117;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.util.Scanner;
+
+public class FileReadWriter_05 {
+
+	static final String FILENAME="C:\\sist0103\\File\\sungjuk.txt";
+	FileReader fr=null;
+	BufferedReader br=null;
+	FileWriter fw=null;
+	Scanner sc=new Scanner(System.in);
+	
+	public int getMenu()
+	{
+		int num=0;
+		System.out.println("1.추가  2.전체출력  9.종료");
+		num=Integer.parseInt(sc.nextLine());
+		return num;
+	}
+	
+	//정보를 입력해서 파일에 저장
+	public void sungjukWrite()
+	{
+		//이름,점수 입력
+		System.out.println("학생명을 입력하세요");
+		String name=sc.nextLine();
+		System.out.println("점수를 입력하세요");
+		int score=Integer.parseInt(sc.nextLine());
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

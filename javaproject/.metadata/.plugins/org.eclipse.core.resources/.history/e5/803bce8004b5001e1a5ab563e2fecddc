@@ -1,0 +1,114 @@
+package day0117;
+
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class MyShopList_07 {
+
+	static final String FILENAME="C:\\sist0103\\File\\myshop.txt";
+	List<MyShop> list=new ArrayList<MyShop>();
+	Scanner sc=new Scanner(System.in);
+	
+	
+	public MyShopList_07() {
+		shopFileRead();
+	}
+	//파일읽기
+	public void shopFileRead()
+	{
+		FileReader fr=null;
+		BufferedReader br=null;
+		
+		try {
+			fr=new FileReader(FILENAME);
+			br=new BufferedReader(fr);
+			
+			while(true)
+			{
+				String shop=br.readLine();
+				
+				if(shop==null);
+					break;
+				
+				String [] d=shop.split(",");
+				
+				String sang=d[0];
+				int su=Integer.parseInt(d[1]);
+				int price=Integer.parseInt(d[2]);
+				int total=su*price;
+				
+				//MyShop클래스에 저장 #1
+				/*MyShop s=new MyShop(); //디폴트 생성
+				
+				s.setSangpum(sang);
+				s.setSu(su);
+				s.setPrice(price);
+				s.setTotal(total);*/
+				
+				//MyShop클래스에 저장 #2
+				MyShop s=new MyShop(sang, su, price);
+				//s.setTotal(total);
+				
+				//리스트에 추가
+				list.add(s);
+				
+			}
+			
+			System.out.println("파일에서 총 "+list.size()+"개의 상품목록을 가져왔음!!");
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}finally {
+			try {
+				br.close();
+				fr.close();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+		
+	}
+	
+	//파일쓰기
+	public void shopFileWrite()
+	{
+		FileWriter fw=null;
+		
+		try {
+			fw=new FileWriter(FILENAME);
+			
+			//MyShop클래스의 내용을 얻어서 출력
+			for(MyShop shop:list)
+			{
+				String s=shop.getSangpum()+","+shop.getSu()+","+shop.getPrice()+"\n";
+				fw.write(s);
+			}
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}finally {
+			try {
+				fw.close();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+	}
+			
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
