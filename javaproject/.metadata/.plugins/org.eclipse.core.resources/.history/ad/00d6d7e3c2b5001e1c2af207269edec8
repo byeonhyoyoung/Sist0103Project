@@ -1,0 +1,32 @@
+package day0118;
+
+import java.awt.Color;
+import java.awt.Container;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+
+public class SwingArrEvent_08 extends JFrame{
+
+	Container cp;
+	JButton [] btn=new JButton[6];
+	String [] btnLabel= {"Red","Green","Blue","Magenta","Gray","Yellow"};
+	Color [] btncolors= {Color.red,Color.green,Color.blue,Color.magenta,Color.gray,Color.yellow};
+	public SwingArrEvent_08(String title) {
+		super(title);
+		
+		cp=this.getContentPane();
+		
+		this.setBounds(300, 100, 600, 300);
+		cp.setBackground(new Color(255,153,153));
+		this.setVisible(true);
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		new SwingArrEvent_08("배열버튼 이벤트_8");
+	
+	}
+
+}

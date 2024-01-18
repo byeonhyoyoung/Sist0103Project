@@ -1,0 +1,12 @@
+package day0118;
+
+import java.awt.Container;
+
+import javax.swing.JFrame;
+
+public class SwingStart extends JFrame {
+
+	Container cp;
+	
+	public SwingStart
+}

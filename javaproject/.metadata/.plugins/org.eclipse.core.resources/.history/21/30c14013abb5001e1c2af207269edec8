@@ -1,0 +1,46 @@
+package day0118;
+
+import java.awt.Color;
+import java.awt.Container;
+import java.awt.FlowLayout;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+
+public class SwingBtnEvent_05 extends JFrame{
+	
+	Container cp;
+	JButton btn1;
+	
+	public SwingBtnEvent_05(String title) {  
+
+		super(title);
+		
+		cp=this.getContentPane();
+		
+		this.setBounds(300, 100, 300, 300);
+		cp.setBackground(new Color(255,153,153));
+		initDesign();
+		this.setVisible(true);
+	}
+	
+	public void initDesign()
+	{
+		this.setLayout(new FlowLayout());
+		
+		btn1=new JButton("◀");
+		btn1=new JButton("▶");
+		
+		//버튼색상
+		btn1.setBackground(Color.RED);
+		
+		//글자색상
+		//btn1.setFont(Color.BLACK);
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		new SwingBtnEvent_05("버튼이벤트5");
+	}
+}
