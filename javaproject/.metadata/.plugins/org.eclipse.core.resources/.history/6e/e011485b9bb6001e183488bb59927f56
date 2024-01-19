@@ -1,0 +1,38 @@
+package day0119;
+
+import java.awt.Color;
+import java.awt.Container;
+
+import javax.swing.JButton;
+import javax.swing.JComboBox;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+
+public class Combo_07 extends JFrame {
+
+	JComboBox<String> combo;
+	String [] names= {"박나래","전현무","덱스","기안"};
+	JTextField tfName;
+	JButton btnAdd,btnDel;
+	JLabel lblResult;
+	
+	int idx=-1; //멤버변수는 0을 자동초기화 되는데 0번 삭제를 막기위해서
+	
+	
+	
+	public Combo_07(String title) {  
+		super(title);
+		this.setBounds(300, 100, 300, 300);
+		this.getContentPane().setBackground(new Color(255,204,204));
+		this.setVisible(true);
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		new Combo_07("오늘 마지막문제"); 
+	}
+	
+
+}

@@ -18,8 +18,7 @@ public class CheckRadio_03 extends JFrame implements ActionListener,ItemListener
 
 	Container cp;
 	JCheckBox [] cbHobby=new JCheckBox[4];
-	JCheckBox cbDriver;
-	JCheckBox cbBold;
+	JCheckBox cbDriver, cbBold;
 	JButton btnHobby;
 	JLabel lblResult;
 	
@@ -39,14 +38,14 @@ public class CheckRadio_03 extends JFrame implements ActionListener,ItemListener
 		this.setLayout(null);
 		
 		cbDriver=new JCheckBox("운전면허");
-		cbDriver.setBounds(20, 20, 100, 20);
+		cbDriver.setBounds(20, 20, 100, 30);
 		cbDriver.setOpaque(false);
 		cbDriver.addItemListener(this); //ItemListener이벤트 핸들러와 연결되는 객체임을 표시
 		this.add(cbDriver);
 		
 		//라벨 굵게
 		cbBold=new JCheckBox("글꼴굵게");
-		cbBold.setBounds(20, 65, 100, 20);
+		cbBold.setBounds(20, 60, 150, 30);
 		cbBold.setOpaque(false);
 		cbBold.addItemListener(this); //ItemListener이벤트 핸들러와 연결되는 객체임을 표시
 		this.add(cbBold);
@@ -66,9 +65,9 @@ public class CheckRadio_03 extends JFrame implements ActionListener,ItemListener
 			cbHobby[i]=new JCheckBox(hobbys[i]);
 			cbHobby[i].setBounds(xpos, 100, 80, 30);
 			cbHobby[i].setOpaque(false);
-			xpos+=80;
 			cbHobby[i].addItemListener(this); // 취미 체크박스에 아이템 리스너 추가
             this.add(cbHobby[i]); // 취미 체크박스를 프레임에 추가
+            xpos+=80;
 		}
 		
 		//버튼
