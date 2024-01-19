@@ -1,0 +1,28 @@
+package day0119;
+
+import java.awt.Color;
+import java.awt.Container;
+
+import javax.swing.JFrame;
+
+public class SwingRadioCheck_02 extends JFrame{
+
+	Container cp;
+	
+	
+	public SwingRadioCheck_02(String title) {  
+		super(title);
+		
+		cp=this.getContentPane();
+		
+		this.setBounds(300, 100, 500, 400);
+		cp.setBackground(new Color(255,204,204));
+		this.setVisible(true);
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		new SwingRadioCheck_02("스윙 라디오 체크박스_2"); 
+	}
+}
