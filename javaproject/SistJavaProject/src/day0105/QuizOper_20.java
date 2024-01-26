@@ -14,7 +14,7 @@ public class QuizOper_20 {
 		 * 할인된 금액: 10000원
 		 */
 
-		Scanner sc=new Scanner(System.in);
+		//Scanner sc=new Scanner(System.in);
 		
 	}
 

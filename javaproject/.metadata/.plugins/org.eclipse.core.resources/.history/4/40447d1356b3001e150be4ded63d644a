@@ -1,5 +1,0 @@
-package day0115;
-//멤버클래스인 경우 main을 쓰지  않는다
-public class Board_09 {
-
-}
