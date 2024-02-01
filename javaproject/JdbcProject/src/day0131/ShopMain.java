@@ -6,10 +6,12 @@ import java.awt.event.ActionListener;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 
 public class ShopMain extends JFrame implements ActionListener {
 
 	JButton btnAdd,btnDel,btnUpdate,btnList;
+	ShopDbModel dbModel=new ShopDbModel();
 	
 	public ShopMain() {
 		super("ShopMain");
@@ -50,7 +52,10 @@ public class ShopMain extends JFrame implements ActionListener {
 			ShopAddForm add=new ShopAddForm();
 		}else if(ob==btnDel)
 		{
-			System.out.println("del");
+			//System.out.println("del");
+			String num=JOptionPane.showInputDialog("삭제할 num을 입력해 주세요");
+			dbModel.deleteSangpum(num);
+			
 		}else if(ob==btnUpdate)
 		{
 			System.out.println("update");

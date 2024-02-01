@@ -86,7 +86,29 @@ public class ShopDbModel {
 		return list;
 	}
 	
-	//삭제
+	//삭제..num을 받아서 삭제하는 메서드
+	public void deleteSangpum(String num)
+	{
+		Connection conn=db.getOracle();
+		PreparedStatement pstmt=null;
+		
+		String sql="delete from sshop where num=?";
+		
+		try {
+			pstmt=conn.prepareStatement(sql);
+			
+			//바인딩
+			pstmt.setString(1, num);
+			//실행
+			pstmt.execute();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} finally {
+			db.dbClose(pstmt, conn);
+		}
+		
+	}
 	
 	
 	//수정

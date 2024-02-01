@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="stuin"/>
+		<item key="selection" value="Row"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="row"/>
 			<item value="stuin"/>
 			<item value="tot"/>
 			<item value="sql"/>
@@ -22,7 +23,6 @@
 			<item value="de"/>
 			<item value="s_no"/>
 			<item value="num"/>
-			<item value="no\um"/>
 		</list>
 		<list key="replacehistory">
 			<item value="s_num"/>
