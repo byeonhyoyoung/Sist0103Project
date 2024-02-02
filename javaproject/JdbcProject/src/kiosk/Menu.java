@@ -47,5 +47,11 @@ public class Menu {
 	public void setMenuPrice(int menuPrice) {
 		this.menuPrice = menuPrice;
 	}
+
+	@Override
+	public String toString() {
+		return "Menu [category=" + category + ", menuName=" + menuName + ", menuPrice=" + menuPrice + ", addition="
+				+ addition + ", id=" + id + "]";
+	}
 	
 }

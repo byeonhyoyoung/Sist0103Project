@@ -48,11 +48,9 @@ public class KioskMain {
       int n = 0;
       Scanner sc = new Scanner(System.in);
 
-//      System.out.println("커피 / 논커피 / 스무디 / 종료 ");
-//      str = sc.next();
-
       menu.setCategory(str); // 메뉴 선택
-
+      
+      
       if (str.equals("커피")) { // 선택된 메뉴가...
          System.out.println("아메리카노(3500) / 라떼(4000) / 카페모카(4500)");
          str = sc.next();
@@ -83,17 +81,19 @@ public class KioskMain {
          else if (str.equals("요거트스무디"))
             menu.setMenuPrice(5000);
       }
+//      System.out.println(menu.toString());
 
       return menu;
 
    }
 
-   public static void insertAddition(Menu menu) {
+   public static Menu insertAddition(Menu m) {
       Addition addition = new Addition();
       DbConnect db = new DbConnect();
       String str = "";
       int n = 0;
       Scanner sc = new Scanner(System.in);
+//      Menu menu = m;
 
       System.out.println("====================================");
       System.out.println("다음 옵션을 꼭 선택해주세요.");
@@ -113,10 +113,12 @@ public class KioskMain {
       n = sc.nextInt();
       addition.setQuantity(n);
 
-      menu.setAddition(addition); // 해당 메뉴에 대한 옵션 넣어줌
+      m.setAddition(addition); // 해당 메뉴에 대한 옵션 넣어줌
+//      System.out.println(m.toString());
+      return m;
 
    }
-   
+
    public static int findPrice(String name) {
       int result = 0;
       String sql = "select menu_price from menu where menu_name=?";
@@ -126,23 +128,21 @@ public class KioskMain {
 
       conn = db.getOracle();
       try {
-         pstmt=conn.prepareStatement(sql);
+         pstmt = conn.prepareStatement(sql);
          pstmt.setString(1, name);
-         rs=pstmt.executeQuery();
-         
-         
-         while(rs.next())
-         {
+         rs = pstmt.executeQuery();
+
+         while (rs.next()) {
             result = rs.getInt("menu_price");
          }
-         
+
       } catch (SQLException e) {
          // TODO Auto-generated catch block
          e.printStackTrace();
       } finally {
          db.dbClose(rs, pstmt, conn);
       }
-      
+
       return result;
    }
 
@@ -152,7 +152,6 @@ public class KioskMain {
       int n;
       String id = "", pwd = "", str = "";
 
-      System.out.println("===== 키오스크 시작 =====");
       System.out.println("로그인 해주세요");
       System.out.println("아이디 : ");
       id = sc.next();
@@ -164,21 +163,29 @@ public class KioskMain {
          while (true) {
             System.out.println("커피 / 논커피 / 스무디 / 종료 ");
             str = sc.next();
-            if(str.equals("종료")) break;
+            if (str.equals("종료"))
+               break;
+            if (str.equals("모드")) {
+               print();
+               continue;
+            }
+
             Menu menu = selectMenu(str); // 해당 메소드에서 메뉴를 다 저장하여 리턴해줌
-            insertAddition(menu); // 해당 메뉴에 대한 옵션 선택해줌
+            menu = insertAddition(menu); // 해당 메뉴에 대한 옵션 선택해줌
+            System.out.println();
             int price = findPrice(menu.getMenuName());
             int quantity = menu.getAddition().getQuantity();
             int pay = price * quantity;
-            System.out.println("금액 : "+pay);
-            
+//            System.out.println("price" + price + " quantity" + quantity);
+            System.out.println("금액 : " + pay);
+
             System.out.println("결제 방법을 선택하세요(카드 / 기프티콘)");
             str = sc.next();
             if (str.equals("카드")) {
                System.out.println("카드를 넣어주세요.");
                System.out.println("처리중입니다. 잠시만 기다려주십시오.");
                Thread.sleep(3000); // 3초 정도 진행됨
-               System.out.println("결제가 완료되었습니다.");
+               System.out.println("결제가 완료되었습니다.\n");
                /*
                 * 여기다가 영수증 여부 묻는 코드 작성
                 */
@@ -187,7 +194,7 @@ public class KioskMain {
                System.out.println("기프티콘을 바코드에 찍어주세요.");
                Thread.sleep(3000); // 3초 정도 진행됨
                System.out.println("띡");
-               System.out.println("결제가 완료되었습니다.");
+               System.out.println("결제가 완료되었습니다.\n");
                /*
                 * 여기다가 영수증 여부 묻는 코드 작성
                 */
@@ -196,12 +203,34 @@ public class KioskMain {
                System.out.println("잘못 입력하여 이전 화면으로 돌아갑니다.");
             }
 
-
          } // while end
       } else { // 로그인 실패 시
          System.out.println("로그인 실패하셨습니다.");
       }
    } // main end
-   
+
+   public static void print() {
+      Scanner sc = new Scanner(System.in);
+      Admin admin = new Admin();
+      String str = "";
+
+      while (true) {
+         System.out.println("메뉴 추가 / 수정 / 삭제 / 이전");
+         str = sc.next();
+         if(str.equals("추가")) {
+            admin.insertMenu();
+         }else if(str.equals("수정")) {
+            admin.updateMenu();
+         }else if(str.equals("삭제")) {
+            admin.deleteMenu();
+         }else if(str.equals("이전")) {
+            break;
+         }else {
+            System.out.println("잘못 입력하셨습니다.");
+         }
+
+      } // while end
+
+   }
 
 } // class end
