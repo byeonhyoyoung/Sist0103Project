@@ -1,5 +1,5 @@
 <div align="center">
-<img style="width: 500px; text-align: center;" src="https://github.com/user-attachments/assets/6fca8ece-d8cc-4103-9b6c-245f0e102894"><br>
+<img style="width: 500px; text-align: center;" src="https://github.com/user-attachments/assets/5122bc15-9b92-4a1b-970d-e0734c9e126e"><br>
 </div><br><br>
 
 ## 1) 프로젝트 소개
