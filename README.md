@@ -10,27 +10,27 @@
 ## 2) ERD 및 테이블 정의
 <div align=center>
 <img src="https://github.com/user-attachments/assets/be2cb889-9f9f-4a7e-ba58-a13a096d31c2" width="100%"><br>
-</div><br><br>
+</div><br>
 <div align=center>
 <img src="https://github.com/user-attachments/assets/7ae5f303-a9ca-4a42-91a4-bbdc46ec6e50" width="100%"><br>
 </div><br><br>
  
 ## 3) 클래스 다이어그램
 <div align=center>
-<img src="https://github.com/ssong-sk/codeconnect/assets/155614770/a6be9e9f-2130-49f9-acad-a9572b56bd19" width="100%"><br>
+<img src="https://github.com/user-attachments/assets/2e09c260-60e6-4bbd-acea-3ccaad8960d7" width="100%"><br>
 </div><br><br>
 
 ## 4) 순서도
 <div align=center>
-<img src="https://github.com/ssong-sk/codeconnect/assets/155614770/a6be9e9f-2130-49f9-acad-a9572b56bd19" width="100%"><br>
+<img src="https://github.com/user-attachments/assets/9d784e15-ee31-4e3b-ba19-edce0e18f8d5" width="100%"><br>
 </div><br><br>
 
 ## 5) 아키텍처
 <div align=center>
-<img src="https://github.com/ssong-sk/codeconnect/assets/155614770/a6be9e9f-2130-49f9-acad-a9572b56bd19" width="100%"><br>
+<img src="https://github.com/user-attachments/assets/8d5cceb6-bb69-43ef-97aa-6e39f58105d0" width="100%"><br>
 </div><br><br>
 
 ## 6) 시현화면
 <div align=center>
-<img src="https://github.com/ssong-sk/codeconnect/assets/155614770/a6be9e9f-2130-49f9-acad-a9572b56bd19" width="100%"><br>
+<img src="" width="100%"><br>
 </div><br><br>
