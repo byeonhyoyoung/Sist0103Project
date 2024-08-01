@@ -32,5 +32,11 @@
 
 ## 6) 시현화면
 <div align=center>
-<img src="" width="100%"><br>
+<img src="https://github.com/user-attachments/assets/127c71d5-6abb-4eb5-9a97-3f282310229f" width="100%"><br>
+</div><br>
+<div align=center>
+<img src="https://github.com/user-attachments/assets/5b0057df-0398-40c1-b7e4-c6dcf7d66aa6" width="100%"><br>
+</div><br>
+<div align=center>
+<img src="https://github.com/user-attachments/assets/46b47def-1057-45d8-af4f-77a9d871fceb" width="100%"><br>
 </div><br><br>
