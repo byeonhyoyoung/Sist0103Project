@@ -1,5 +1,5 @@
 <div align="center">
-<img style="width: 500px; text-align: center;" src="https://github.com/JunbroGit/SemiProject/assets/142892132/2ad37af3-a42f-4593-90e5-c1cc3b2232ce"><br>
+<img style="width: 500px; text-align: center;" src="https://github.com/user-attachments/assets/6fca8ece-d8cc-4103-9b6c-245f0e102894"><br>
 </div><br><br>
 
 ## 1) 프로젝트 소개
