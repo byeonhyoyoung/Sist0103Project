@@ -8,6 +8,7 @@
 카페를 방문하는 고객들의 대기 시간을 줄이고, 편리하게 주문할 수 있는 키오스크 프로그램입니다.<br><br>
 
 ## 2) ERD 및 테이블 정의
+<b>
 <div align=center>
 <img src="https://github.com/user-attachments/assets/be2cb889-9f9f-4a7e-ba58-a13a096d31c2" width="100%"><br>
 </div><br>
